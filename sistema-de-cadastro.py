@@ -1,4 +1,5 @@
 contatos = []
+dicionario = {}
 
 
 while True:
@@ -11,13 +12,22 @@ while True:
     #Lógica da escolha
     if escolha == "1":
         print("-- Adicione o contato --")
+    
         nome = input("Digite o nome:")
         telefone = input("Digite o telefone:")
         email = input("Digite o email:")
-        contatos.append(nome)
-        contatos.append(telefone)
-        contatos.append(email)      
+         
+        dicionario["nome"] = nome
+        dicionario["telefone"] = telefone
+        dicionario["email"] = email
     
+        contatos.append(dicionario)
+    
+    elif escolha == "2":
+       for dicionario in contatos:
+           print(contatos)
+
+
         
         
 
