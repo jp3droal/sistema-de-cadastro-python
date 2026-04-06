@@ -35,18 +35,23 @@ while True:
     elif escolha == "2":
         print("\n --- Lista de Contatos ---\n")
         for item in contatos:
-            print(item)
+            print(f"Nome: {item['nome']} | Tel: {item['telefone']} | Email: {item['email']}")
 
     #Puxando os itens da lista de acordo com o nome que foi adicionado antes no dicionário
     elif escolha == "3":
-        busca = input("Digite alguma informação do contato para buscar: ")
+        busca = input("Digite o nome,telefone ou email do contato para buscar: ")
+        encontrado = False
         
         for item in contatos:
             if busca.lower() == item["nome"].lower() or busca == item["telefone"].lower() or busca == item["email"].lower():
-                print("Encontrado:")
-                print(item)
-            else:
+                print("Contato encontrado:")
+                print(f"Nome: {item['nome']}\nTelefone: {item['telefone']}\nEmail: {item['email']}")
+                encontrado = True
+                break
+                
+            if not encontrado:
                 print("Contato não encontrado!")
+
     #Fechando o programa
     elif escolha == "0":
         print("Saindo...")    
