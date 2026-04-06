@@ -41,7 +41,7 @@ while True:
         busca = input("Digite o nome para buscar: ")
         
         for item in contatos:
-            if busca == item["nome"] or busca == item["telefone"] or busca == item["email"]:
+            if busca.lower() == item["nome"].lower() or busca == item["telefone"] or busca == item["email"]:
                 print("Encontrado:")
                 print(item)
             else:
