@@ -1,5 +1,6 @@
 #SISTEMA DE GERENCIAMENTO DE CONTATOS
-# EQUIPE: João Pedro Alves/ Laura / Mateus / Victor 
+# EQUIPE: João Pedro Alves/ Laura Leticia / Mateus Tellez / Paulo Victor 
+
  
 
 #Criando a lista    
@@ -8,7 +9,7 @@ contatos = []
 #Criando o Loop
 while True:
     #Interface do sistema
-    print("\n ------ Sistema de Gerenciamento de Contatos ------")
+    print("\n ------ Sistema de Gerenciamento de Contatos ------\n")
     print("1 - Adicionar Contatos")
     print("2 - Listar Contatos")
     print("3 - Buscar Contatos")
@@ -16,7 +17,7 @@ while True:
     escolha = input("Digite a opção: ")
     #Adicionando contatos
     if escolha == "1":
-        print("-- Adicione o contato --")
+        print("\n -- Adicione o contato --\n")
     
         nome = input("Digite o nome:")
         telefone = input("Digite o telefone:")
@@ -28,11 +29,11 @@ while True:
         dicionario["email"] = email
         
         contatos.append(dicionario)
-        print("Salvo!")
+        print("O contato foi salvo!")
 
     #Puxando os itens da lista para mostrar ao usuário os contatos
     elif escolha == "2":
-        print("\n --- Lista de Contatos ---")
+        print("\n --- Lista de Contatos ---\n")
         for item in contatos:
             print(item)
 
@@ -41,7 +42,7 @@ while True:
         busca = input("Digite o nome para buscar: ")
         
         for item in contatos:
-            if busca.lower() == item["nome"].lower() or busca == item["telefone"] or busca == item["email"]:
+            if busca.lower() == item["nome"].lower() or busca == item["telefone"].lower() or busca == item["email"].lower():
                 print("Encontrado:")
                 print(item)
             else:
@@ -50,7 +51,7 @@ while True:
     elif escolha == "0":
         print("Saindo...")    
         break    
-
+    #Else para caso o usuário digite um número que não corresponde as alternativas    
     else:
         print("Opção inexistente!")
 
