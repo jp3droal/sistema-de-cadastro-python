@@ -1,7 +1,11 @@
-    
+#SISTEMA DE GERENCIAMENTO DE CONTATOS
+# EQUIPE: João Pedro Alves/ Laura / Mateus / Victor 
+ 
+
+#Criando a lista    
 contatos = []
 
-
+#Criando o Loop
 while True:
     #Interface do sistema
     print("\n ------ Sistema de Gerenciamento de Contatos ------")
@@ -46,6 +50,9 @@ while True:
     elif escolha == "0":
         print("Saindo...")    
         break    
+
+    else:
+        print("Opção inexistente!")
 
 
 
