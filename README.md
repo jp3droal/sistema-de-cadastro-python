@@ -1,8 +1,9 @@
 
-Sistema de Gerenciamento de Contatos (Python)
+<h1>Sistema de Gerenciamento de Contatos (Python)</h1>
+
 Este projeto é um sistema simples desenvolvido em Python para cadastrar, listar e buscar contatos. Ele foi criado como parte de uma atividade acadêmica para aplicar conceitos básicos de lógica de programação.
 
-📋 Funcionalidades
+<h1> 📋 Funcionalidades </h1>
 O sistema funciona através de um menu interativo no terminal com as seguintes opções:
 
 1 - Adicionar contato: Permite cadastrar o nome, telefone e e-mail de uma pessoa.
@@ -13,14 +14,14 @@ O sistema funciona através de um menu interativo no terminal com as seguintes o
 
 0 - Sair: Encerra o programa.
 
-🛠️ Tecnologias Utilizadas
+<h1>🛠️ Tecnologias Utilizadas</h1>
 Linguagem: Python 3
 
 Estruturas de Dados: Listas e Dicionários
 
 Conceitos aplicados: Laços de repetição (while), estruturas condicionais (if/elif/else) e entrada/saída de dados.
 
-🚀 Como rodar o projeto
+<h1>🚀 Como rodar o projeto </h1>
 Certifique-se de ter o Python instalado no seu computador.
 
 Baixe o arquivo .py do projeto.
