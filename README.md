@@ -1,8 +1,12 @@
 
 <h1>Sistema de Gerenciamento de Contatos (Python)</h1>
 
-Este projeto é um sistema simples desenvolvido em Python para cadastrar, listar e buscar contatos. Ele foi criado como parte de uma atividade acadêmica para aplicar conceitos básicos de lógica de programação.\n
-Equipe: João Pedro Alves /Laura Letícia /Mateus Tellez /Paulo Victor
+Este projeto é um sistema simples desenvolvido em Python para cadastrar, listar e buscar contatos. Ele foi criado como parte de uma atividade acadêmica para aplicar conceitos básicos de lógica de programação.  
+
+Equipe: João Pedro Alves  
+Laura Letícia 
+Mateus Tellez 
+Paulo Victor
 
 <h1> 📋 Funcionalidades </h1>
 O sistema funciona através de um menu interativo no terminal com as seguintes opções:
