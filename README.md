@@ -17,6 +17,7 @@ O sistema funciona através de um menu interativo no terminal com as seguintes o
 <h1>🛠️ Tecnologias Utilizadas</h1>
 Linguagem: Python 3
 
+
 Estruturas de Dados: Listas e Dicionários
 
 Conceitos aplicados: Laços de repetição (while), estruturas condicionais (if/elif/else) e entrada/saída de dados.
