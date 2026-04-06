@@ -39,7 +39,7 @@ while True:
 
     #Puxando os itens da lista de acordo com o nome que foi adicionado antes no dicionário
     elif escolha == "3":
-        busca = input("Digite o nome para buscar: ")
+        busca = input("Digite alguma informação do contato para buscar: ")
         
         for item in contatos:
             if busca.lower() == item["nome"].lower() or busca == item["telefone"].lower() or busca == item["email"].lower():
