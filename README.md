@@ -1,9 +1,3 @@
-O Gemini disse
-Com certeza! Um README bem feito conta muitos pontos em trabalhos de programação, pois mostra que você é organizado.
-
-Como você quer que o código pareça feito por um iniciante, o README deve ser direto, claro e funcional, explicando como o sistema funciona sem usar termos técnicos excessivamente complexos.
-
-Aqui está um modelo pronto. Você pode copiar e salvar como um arquivo chamado README.md na mesma pasta do seu código:
 
 Sistema de Gerenciamento de Contatos (Python)
 Este projeto é um sistema simples desenvolvido em Python para cadastrar, listar e buscar contatos. Ele foi criado como parte de uma atividade acadêmica para aplicar conceitos básicos de lógica de programação.
