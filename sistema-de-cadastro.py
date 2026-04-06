@@ -1,53 +1,54 @@
+    
 contatos = []
-dicionario = {}
 
 
 while True:
     #Interface do sistema
-    print("------Menu do Sistema------")
-    opcao1 = print("1 - Adicionar Contatos")
-    opcao2 = print("2 - Listar Contatos")
-    opcao3 = print("3 - Buscar Contatos")
-    opcao4 = print("4 - Sair")
+    print("\n ------ Sistema de Gerenciamento de Contatos ------")
+    print("1 - Adicionar Contatos")
+    print("2 - Listar Contatos")
+    print("3 - Buscar Contatos")
+    print("0 - Sair")
     escolha = input("Digite a opção: ")
-    #Lógica da escolha
+    #Adicionando contatos
     if escolha == "1":
         print("-- Adicione o contato --")
     
         nome = input("Digite o nome:")
         telefone = input("Digite o telefone:")
         email = input("Digite o email:")
-         
+        #Criação do dicionário para armazenamento do contato
+        dicionario = {}
         dicionario["nome"] = nome
         dicionario["telefone"] = telefone
         dicionario["email"] = email
-    
+        
         contatos.append(dicionario)
+        print("Salvo!")
 
-        print("\n Contato Adicionado! \n")
-
+    #Puxando os itens da lista para mostrar ao usuário os contatos
     elif escolha == "2":
-       for dicionario in contatos:
-           print("------Lista de contatos------")
-           print(contatos)
-           print("\n")
-    
+        print("\n --- Lista de Contatos ---")
+        for item in contatos:
+            print(item)
+
+    #Puxando os itens da lista de acordo com o nome que foi adicionado antes no dicionário
     elif escolha == "3":
-        busca = int(input("Digite o ID do contato:"))
-        detalhes = contatos[busca]
+        busca = input("Digite o nome para buscar: ")
+        
+        for item in contatos:
+            if busca == item["nome"] or busca == item["telefone"] or busca == item["email"]:
+                print("Encontrado:")
+                print(item)
+            else:
+                print("Contato não encontrado!")
+    #Fechando o programa
+    elif escolha == "0":
+        print("Saindo...")    
+        break    
 
-        print(f"Nome:{detalhes[nome]} ")
-        print(f"Telefone:{detalhes[telefone]} ")
-        print(f"Email:{detalhes[email]} ")
-        
 
-    elif escolha == "4":
-        print("Fim do programa...")
-        break
-        
-    else:
-        print("Opção Inválida")    
-        
+
 
 
     
